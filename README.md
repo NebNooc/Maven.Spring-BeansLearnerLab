@@ -197,8 +197,8 @@
 
 -
 ### Part 11.2 - Test `InstructorConfig` Class
-* Create a `TestInstructorConfig` class in the `test` package.
-* The class should ensure that each `Bean` in the `TestInstructorConfig` class is configured as expected.
+* Create a `com.example.demo.TestInstructorConfig` class in the `test` package.
+* The class should ensure that each `Bean` in the `com.example.demo.TestInstructorConfig` class is configured as expected.
 
 
 -

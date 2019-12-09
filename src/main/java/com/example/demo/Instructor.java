@@ -12,8 +12,14 @@ public class Instructor extends Person implements Teacher {
     }
 
     public void lecture(Iterable<? extends Learner> learners, Double numberOfHours) {
+        Integer counter = 0;
+
         for(Learner learner : learners) {
-            learner.learn(numberOfHours);
+            counter++;
+        }
+
+        for(Learner learner : learners) {
+            learner.learn(numberOfHours / counter);
         }
     }
 }

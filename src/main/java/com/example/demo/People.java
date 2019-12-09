@@ -19,8 +19,16 @@ public abstract class People <PersonType extends Person> implements Iterable<Per
         personList.remove(personType);
     }
 
-    public void size() {
-        personList.size();
+    public void remove(String name) {
+        personList.removeIf(p -> (p.getName().equals(name)));
+    }
+
+    public void remove(Long id) {
+        personList.removeIf(p -> (p.getId().equals(id)));
+    }
+
+    public Integer size() {
+        return personList.size();
     }
 
     public void clear() {

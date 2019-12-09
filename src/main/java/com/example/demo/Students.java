@@ -7,4 +7,7 @@ public class Students extends People<Student> {
     public Students(List<Student> list) {
         super(list);
     }
+
+
+
 }
